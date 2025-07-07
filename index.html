@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <h1 class="title">Hello World! </h1>
+      <p id="currentTime"></p>
+      <script src="script.js"></script>
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+    body { background: pink; color: #333; line-height: 1.6; }
+    nav { background: #333; padding: 1rem; text-align: center; }
+    nav a { color: orange; margin: 0 10px; text-decoration: none; transition: 0.3s; }
+    nav a:hover { color: red; }
+    section { padding: 3rem 1rem; max-width: 800px; margin: auto; }
+    #home { background: url('https://source.unsplash.com/1600x600/?tech') center/cover no-repeat; height: 60vh; display: flex; align-items: center; justify-content: center; color: #fff; text-shadow: 2px 2px #000; }
+    #home h1 { font-size: 3rem; }
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap: 1rem; }
+    .project { background: red; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .project img { width: 100%; height: auto; border-radius: 4px; }
+    form { display: flex; flex-direction: column; gap: 0.5rem; max-width: 400px; margin: auto; }
+    form input, form textarea, form button { padding: 0.75rem; border-radius: 4px; border: 1px solid #ccc; }
+    form button { background: #333; color: red; border: none; cursor: pointer; }
+    form button:hover { background: #555; }
+    footer { text-align: center; padding: 1rem; background: #333; color: #fff; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h1>Welcome to My Portfolio</h1>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I’m Srushti Soudatti, a web developer skilled in HTML, CSS, JS and AI-driven projects.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <img src="https://source.unsplash.com/400x300/?website" alt="Project 1">
+        <h3>Project One</h3>
+        <p>Projects done with the help of css I-CARD
+        projects created a website and hosted on github</p>
+      </div>
+      <div class="project">
+        <img src="https://source.unsplash.com/400x300/?app" alt="Project 2">
+        <h3>Project Two</h3>
+        <p>Project done using c++ created a online website of shopping.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+      <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 [srushti]</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(link.getAttribute('href'))
+                .scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    document.getElementById('contact-form')
+      .addEventListener('submit', e => {
+        e.preventDefault();
+        const name = e.target.name.value;
+        const email = e.target.email.value;
+        const msg = e.target.message.value;
+        window.location.href =
+          `mailto:your-email@example.com?subject=Message from ${name}&body=${msg} (${email})`;
+      });
+  
+  </script>
+</body>
+</html>
+
+  </body>
+</html>
+
+</body>
+</html>
